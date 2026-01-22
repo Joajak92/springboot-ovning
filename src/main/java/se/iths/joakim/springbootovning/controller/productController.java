@@ -17,7 +17,7 @@ public class productController {
                 new Product("gun", 19.99, "so that you can shoot yourself"),
                 new Product("magazine", 5.99, "so that you can load your gun"),
                 new Product("bullets", 14.99, "200 bullets in a bag"));
-        model.addAttribute(products);
+        model.addAttribute("product", products);
         return products;
     }
 }

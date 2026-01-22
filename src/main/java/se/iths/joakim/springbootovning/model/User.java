@@ -1,5 +1,6 @@
 package se.iths.joakim.springbootovning.model;
 
+// User-klass
 public class User {
     private long id;
     private String username;

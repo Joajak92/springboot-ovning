@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Användarlista</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<h1>Användare</h1>
+<ul>
+    <li th:each="user : ${users}">
+        <span th:text="${user.id}">Id</span> -
+        <span th:text="${user.username}">Namn</span> -
+        <span th:text="${user.password}">Ålder</span> -
+        <span th:text="${user.email}">Email</span>
+    </li>
+</ul>
+</body>
+</html>

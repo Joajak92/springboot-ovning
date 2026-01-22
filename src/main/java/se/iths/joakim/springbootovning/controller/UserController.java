@@ -8,6 +8,7 @@ import se.iths.joakim.springbootovning.model.User;
 
 import java.util.List;
 
+// userController
 @Controller
 @RequestMapping("/")
 public class UserController {

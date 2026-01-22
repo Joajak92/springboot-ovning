@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Personlista</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<h1>Personer</h1>
+<ul>
+    <li th:each="person : ${persons}">
+        <span th:text="${person.id}">Id</span> -
+        <span th:text="${person.name}">Namn</span> -
+        <span th:text="${person.age}">Ålder</span> -
+        <span th:text="${person.email}">Email</span>
+    </li>
+</ul>
+</body>
+</html>
